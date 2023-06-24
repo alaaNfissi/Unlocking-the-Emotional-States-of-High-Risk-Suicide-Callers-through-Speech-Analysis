@@ -75,8 +75,10 @@
 <!-- ABSTRACT -->
 ## Abstract
 
-<p align="justify"> Speech emotion recognition is challenging as human emotion is very ambiguous, making it challenging to distinguish. Often, it can only be detected intermittently across a long sentence, besides speech data with emotional categorization is typically rare.
-In this paper, we introduce CNN-n-GRU, a novel end-to-end (E2E) architecture for speech emotion recognition. The proposed architecture consists of an n-layer convolutional neural network (CNN) followed by an n-layer Gated Recurrent Unit (GRU). Both CNNs and RNNs demonstrated promesing results when processing raw waveform speech input. This motivated our idea of integrating them into a single architecture in order to take advantage of both models. On the one hand, we train our model in a way where CNN component is able to recognise low-level speech representations from raw waveform instead of hand-crafted features or spectrograms, allowing the network to better capture relevant narrow-band emotion features. In this manner, the CNN can handle variable-length speech without requiring segmentation, which prevents crucial data from being lost. On the other hand, RNN component is able to learn temporal-based characteristics, allowing the network to better capture the signal’s time-distributed features. Because CNN can generate multiple levels of abstraction for feature representation, we use it as a first model component to extract high-level features, to be provided to subsequent RNN layers in order to aggregate long-term dependencies. The proposed model was evaluated for speech emotion recognition, by comparison to state-of-the-art methods on both TESS and IEMOCAP datasets. The experimental results demonstrated the high accuracy of the proposed model CNN-n-GRU, outperforming traditional classification approaches. </p>
+<p align="justify"> Suicide remains a major public health concern worldwide, and early detection of suicidal ideation is crucial for prevention. One promising approach to monitoring symptoms is through the prediction of suicidal speech, as speech can be passively collected and may provide insight into changes in risk. However, directly identifying suicidal speech is difficult due to the rapid variability in speech characteristics and the association of suicidal ideation with emotion dysregulation.
+In light of these challenges, we present a novel end-to-end (E2E) method for speech emotion recognition (SER) as a mean of detecting changes in emotional state that may indicate an increased risk for suicide. Our method incorporates the use of Convolutional Neural Networks (CNNs) and Gated Recurrent Units (GRUs) to analyze raw waveform signals. Firstly, our model is designed to train the CNN component to identify higher-level speech representations directly from raw waveform data, rather than relying on manually crafted features or spectrograms. This approach enables the network to effectively capture specific emotion-related features within a narrow frequency range, while also handling speech of varying lengths without the need for segmentation. Secondly, the GRU component is capable of learning temporal patterns, enhancing the network's ability to capture time-dependent features of the signal. 
+Furthermore, we introduce our NSPL-CRISE emotion dataset for our research, which contains phone call recordings from individuals who are lifeline frequent callers with serious physical and psychological problems and a history of suicidal ideation, planning, and previous attempts. This dataset provides valuable insights into the emotional states of individuals at high risk for suicide.
+The goal of this research is to provide a promising approach to symptom monitoring and, ultimately, suicide prevention through early detection of suicidal ideation. Our experimental results show that our method outperforms other state-of-the-art techniques for SER. </p>
 
 <div align="center">
   
@@ -107,11 +109,9 @@ In this paper, we introduce CNN-n-GRU, a novel end-to-end (E2E) architecture for
 <p align="justify">
   
 All source code used to generate the results and figures in the paper are in
-the `CNN-n-GRU_IEMOCAP` and `CNN-n-GRU_TESS` folders.
+the `CNN-n-GRU` folder.
 The calculations and figure generation are all run inside
 [Jupyter notebooks](http://jupyter.org/).
-The data preprocessing used in this study is provided in `Data_exploration` folder.
-See the `README.md` files in each directory for a full description.
   
 </p>
 
@@ -120,9 +120,9 @@ See the `README.md` files in each directory for a full description.
 You can download a copy of all the files in this repository by cloning the
 [git](https://git-scm.com/) repository:
 
-    git clone https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition.git
+    git clone https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis.git
 
-or [download a zip archive](https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition/archive/refs/heads/main.zip).
+or [download a zip archive](https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis/archive/refs/heads/main.zip).
 
 ### Dependencies
 
@@ -164,9 +164,8 @@ Install all required dependencies in it:
 
 <p align="center">
   
-1. First, you need to download IEMOCAP and TESS datasets:
-  * [IEMOCAP official website](https://sail.usc.edu/iemocap/)
-  * [TESS official website](https://tspace.library.utoronto.ca/handle/1807/24487)
+1. First, you need to download CREMA-D dataset:
+  * [CREMA-D official paper]([https://sail.usc.edu/iemocap/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4313618/))
   
 2. To be able to explore the data you need to execute the Jupyter notebook that prepares the `csv` files needed for the experiments.
 To do this, you must first start the notebook server by going into the
@@ -176,7 +175,7 @@ repository top level and running:
 ```
 This will start the server and open your default web browser to the Jupyter
 interface. In the page, go into the `Data_exploration` folder and select the
-`data_exploration.ipynb` notebook to view/run. Make sure to specify the correct datasets paths on your own machine as described in the notebook.
+`data_exploration.ipynb` notebook to view/run. Make sure to specify the correct dataset path on your own machine as described in the notebook.
 
 The notebook is divided into cells (some have text while other have code).
 Each cell can be executed using `Shift + Enter`.
@@ -184,66 +183,16 @@ Executing text cells does nothing and executing code cells runs the code
 and produces it's output.
 To execute the whole notebook, run all cells in order.
 
-3. After generating the needed `csv` files `IEMOCAP_dataset.csv` and `TESS_dataset.csv`, go to your terminal where the `ser-env` environment was
-  activated and go to `CNN-n-GRU_IEMOCAP` folder and choose one of the python files to run the experiment that you want. For example:
+3. After generating the needed `csv` file `CREMA_D_dataset.csv`, go to your terminal where the `ser-env` environment was
+  activated and go to `CNN-n-GRU` folder and choose one of the python file to run the experiment. For example:
 ```sh  
-python iemocap_cnn_3_gru.py
+python cnn_18_gru.py
 ```
-  
-  _You can do the same thing for the TESS dataset by going to the `CNN-n-GRU_IEMOCAP` and runing one of the python files._
-
-
 </p>
-
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-
-## Results
-<p align="center">
-  
-We implemented the proposed architecture CNN-n-GRU in four versions, with n = 3, 5, 11, and 18.
-  
-</p>
-
-### On IEMOCAP dataset
-<p align="center">
-  
-Amoung our model’s four versions performance, the best architecture of our model is CNN-18-GRU as it achieves the highest accuracy and F1-score, 
-where it reaches 81.3% accuracy and 80.9% F1-score on the IEMOCAP dataset which is better compared to the state of-the-art methods.
-The CNN-18-GRU training and validation accuracy over epochs figure shows the evolution of training and validation accuracy of the CNN-18-GRU over 100 epochs. The confusion matrix in CNN-18-GRU confusion matrix figure describes class-wise test results of the CNN18-GRU.
-  
-</p>
-
-CNN-18-GRU training and validation accuracy over epochs            |  CNN-18-GRU confusion matrix
-:-----------------------------------------------------------------:|:-----------------------------:
-![iemocap_cnn18gru_acc](images/iemocap_cnn18gru_acc.png)  |  ![iemocap_cnn18gru_confusion_matrix_1](images/iemocap_cnn18gru_confusion_matrix_1.png)
-
-
-### On TESS dataset
-<p align="center">
-  
-Amoung our model’s four versions performance, the best architecture of our model is CNN-18-GRU as it achieves the highest accuracy and F1-score, 
-where it reaches  99.2% accuracy and 99% F1-score on the TESS dataset which is better compared to the state of-the-art methods.
-The CNN-18-GRU training and validation accuracy over epochs figure shows the evolution of training and validation accuracy of the CNN-18-GRU over 100 epochs. The confusion matrix in CNN-18-GRU confusion matrix figure describes class-wise test results of the CNN18-GRU.
-  
-</p>
-
-CNN-18-GRU training and validation accuracy over epochs            |  CNN-18-GRU confusion matrix
-:-----------------------------------------------------------------:|:-----------------------------:
-![cnn18gru_acc](images/cnn18gru_acc.png)  |  ![cnn18gru_confusion_matrix_1](images/cnn18gru_confusion_matrix.png)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="center">
-  
-_For more detailed experiments and results you can read the paper._
-  
-</p>
 
 
 <!-- CONTRIBUTING -->
@@ -280,7 +229,7 @@ to the authors. See `LICENSE.md` for the full license text.
 
 Alaa Nfissi - [@LinkedIn](https://www.linkedin.com/in/alaa-nfissi/) - alaa.nfissi@mail.concordia.ca
 
-Github Link: [https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition](https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition)
+Github Link: [https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis](https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -301,8 +250,7 @@ Github Link: [https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recogni
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[ser-approaches]: images/ser_aproaches.png
-[model-architecture]: images/model_architecture.png
+[model-architecture]: images/cnn-n-gru-smc.png
 
 
 [anaconda.com]: https://anaconda.org/conda-forge/mlconjug/badges/version.svg
