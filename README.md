@@ -48,29 +48,14 @@
       <ul>
         <li><a href="#getting-the-code">Getting the code</a></li>
         <li><a href="#dependencies">Dependencies</a></li>
-        <li><a href="#reproducing-the-results">Reproducing the results</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#results">Results</a>
-      <ul>
-        <li><a href="#on-iemocap-dataset">On IEMOCAP dataset</a></li>
-        <li><a href="#on-tess-dataset">On TESS dataset</a></li>
-      </ul>
-    </li>
+   
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
-<div align="center">
-  
-![ser-approaches][ser-approaches]
-  
-*SER appraoches*
-  
-</div> 
 
 <!-- ABSTRACT -->
 ## Abstract
@@ -159,37 +144,6 @@ Install all required dependencies in it:
 ```
 
 </p>
-
-### Reproducing the results
-
-<p align="center">
-  
-1. First, you need to download CREMA-D dataset:
-  * [CREMA-D official paper]([https://sail.usc.edu/iemocap/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4313618/))
-  
-2. To be able to explore the data you need to execute the Jupyter notebook that prepares the `csv` files needed for the experiments.
-To do this, you must first start the notebook server by going into the
-repository top level and running:
-```sh 
-    jupyter notebook
-```
-This will start the server and open your default web browser to the Jupyter
-interface. In the page, go into the `Data_exploration` folder and select the
-`data_exploration.ipynb` notebook to view/run. Make sure to specify the correct dataset path on your own machine as described in the notebook.
-
-The notebook is divided into cells (some have text while other have code).
-Each cell can be executed using `Shift + Enter`.
-Executing text cells does nothing and executing code cells runs the code
-and produces it's output.
-To execute the whole notebook, run all cells in order.
-
-3. After generating the needed `csv` file `CREMA_D_dataset.csv`, go to your terminal where the `ser-env` environment was
-  activated and go to `CNN-n-GRU` folder and choose one of the python file to run the experiment. For example:
-```sh  
-python cnn_18_gru.py
-```
-</p>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
