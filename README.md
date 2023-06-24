@@ -4,7 +4,7 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition">
+  <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -21,7 +21,7 @@
   
 <div align="center">
 
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition/#readme "Go to project documentation")
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis/#readme "Go to project documentation")
 
 </div>  
 
@@ -29,9 +29,9 @@
 <div align="center">
     <p align="center">
     ·
-    <a href="https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition/issues">Report Bug</a>
+    <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis/issues">Report Bug</a>
     ·
-    <a href="https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition/issues">Request Feature</a>
+    <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis/issues">Request Feature</a>
   </p>
 </div>
 
