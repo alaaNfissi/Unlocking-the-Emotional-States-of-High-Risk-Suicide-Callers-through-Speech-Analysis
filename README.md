@@ -8,13 +8,13 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Exploiting CNNs and GRUs for efficient end-to-end speech emotion recognition approach from raw waveform signal</h3>
+  <h3 align="center"> Unlocking the Emotional States of High-Risk Suicide Callers through Speech Analysis </h3>
 
   <p align="center">
-    This paper has been submitted for publication in IEEE Transactions on Emerging Topics in Computational Intelligence.
+    This paper has been submitted for publication in the 35th IEEE International Conference on Tools with Artificial Intelligence (ICTAI).
     <br />
    </p>
-   <!-- <a href="https://github.com/alaaNfissi/CNN-n-GRU-for-speech-emotion-recognition"><strong>Explore the docs »</strong></a> -->
+   <!-- <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis"><strong>Explore the docs »</strong></a> -->
 </div>
    
 
