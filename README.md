@@ -4,7 +4,7 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis">
+  <a href="">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -14,7 +14,7 @@
     This paper has been submitted for publication in the 35th IEEE International Conference on Tools with Artificial Intelligence (ICTAI).
     <br />
    </p>
-   <!-- <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis"><strong>Explore the docs »</strong></a> -->
+   <!-- <a href=""><strong>Explore the docs »</strong></a> -->
 </div>
    
 
@@ -29,9 +29,9 @@
 <div align="center">
     <p align="center">
     ·
-    <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis/issues">Report Bug</a>
+    <a href="">Report Bug</a>
     ·
-    <a href="https://github.com/alaaNfissi/Unlocking-the-Emotional-States-of-High-Risk-Suicide-Callers-through-Speech-Analysis/issues">Request Feature</a>
+    <a href="">Request Feature</a>
   </p>
 </div>
 
@@ -50,8 +50,8 @@
         <li><a href="#dependencies">Dependencies</a></li>
       </ul>
     </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a ="#contributing">Contributing</a></li>
+    <li><a ="#license">License</a></li>
   </ol>
 </details>
 
