@@ -82,10 +82,9 @@ component is capable of learning temporal patterns, enhancing
 the network’s ability to capture time-dependent features in
 signal. Furthermore, we validate our approach on the NSPL-
 CRISE emotion dataset that we recently created. This dataset
-contains phone call recordings from lifeline frequent callers
-with psychological problems, and potentially with a history of
-suicidal ideation and previous attempts. We also use another
-public dataset in our experiments. Our experimental results show
+contains phone call recordings from lifeline frequent callers with
+psychological problems, and potentially with a history of suicidal
+ideation and previous attempts. Our experimental results show
 that our method outperforms other state-of-the-art techniques
 for SER. </p>
 
