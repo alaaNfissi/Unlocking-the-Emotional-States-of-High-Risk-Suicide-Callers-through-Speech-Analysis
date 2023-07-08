@@ -58,10 +58,36 @@
 <!-- ABSTRACT -->
 ## Abstract
 
-<p align="justify"> Suicide remains a major public health concern worldwide, and early detection of suicidal ideation is crucial for prevention. One promising approach to monitoring symptoms is through the prediction of suicidal speech, as speech can be passively collected and may provide insight into changes in risk. However, directly identifying suicidal speech is difficult due to the rapid variability in speech characteristics and the association of suicidal ideation with emotion dysregulation.
-In light of these challenges, we present a novel end-to-end (E2E) method for speech emotion recognition (SER) as a mean of detecting changes in emotional state that may indicate an increased risk for suicide. Our method incorporates the use of Convolutional Neural Networks (CNNs) and Gated Recurrent Units (GRUs) to analyze raw waveform signals. Firstly, our model is designed to train the CNN component to identify higher-level speech representations directly from raw waveform data, rather than relying on manually crafted features or spectrograms. This approach enables the network to effectively capture specific emotion-related features within a narrow frequency range, while also handling speech of varying lengths without the need for segmentation. Secondly, the GRU component is capable of learning temporal patterns, enhancing the network's ability to capture time-dependent features of the signal. 
-Furthermore, we introduce our NSPL-CRISE emotion dataset for our research, which contains phone call recordings from individuals who are lifeline frequent callers with serious physical and psychological problems and a history of suicidal ideation, planning, and previous attempts. This dataset provides valuable insights into the emotional states of individuals at high risk for suicide.
-The goal of this research is to provide a promising approach to symptom monitoring and, ultimately, suicide prevention through early detection of suicidal ideation. Our experimental results show that our method outperforms other state-of-the-art techniques for SER. </p>
+<p align="justify"> Suicide remains a major public health concern
+worldwide, and early detection of suicidal ideation is crucial for
+prevention. One promising approach for monitoring symptoms
+is through the prediction of suicidal speech, as speech can be
+passively collected and may provide insight into changes in risk.
+However, identifying suicidal speech is challenging due to the
+rapid variability in speech characteristics and the association of
+suicidal ideation with emotion dysregulation. In light of these
+challenges, we present a novel end-to-end (E2E) method for
+speech emotion recognition (SER) as a mean of detecting changes
+in emotional state, that may indicate a high risk of suicide. Our
+method incorporates the use of Convolutional Neural Networks
+(CNNs) and Gated Recurrent Units (GRUs) to analyze raw
+waveform signals. Firstly, our model is designed to train the CNN
+component to identify higher-level speech representations directly
+from raw waveform data, rather than relying on manually
+crafted features or spectrograms. This enables the network to
+effectively capture specific emotion-related features within a
+narrow frequency range, while also handling speech of varying
+lengths without the need for segmentation. Secondly, the GRU
+component is capable of learning temporal patterns, enhancing
+the network’s ability to capture time-dependent features in
+signal. Furthermore, we validate our approach on the NSPL-
+CRISE emotion dataset that we recently created. This dataset
+contains phone call recordings from lifeline frequent callers
+with psychological problems, and potentially with a history of
+suicidal ideation and previous attempts. We also use another
+public dataset in our experiments. Our experimental results show
+that our method outperforms other state-of-the-art techniques
+for SER. </p>
 
 <div align="center">
   
