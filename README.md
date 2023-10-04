@@ -11,7 +11,7 @@
   <h3 align="center"> Unlocking the Emotional States of High-Risk Suicide Callers through Speech Analysis </h3>
 
   <p align="center">
-    This paper has been submitted for publication in the 35th IEEE International Conference on Tools with Artificial Intelligence (ICTAI).
+    This paper has been submitted for publication in the 18th IEEE International Conference on SEMANTIC COMPUTING (ICSC).
     <br />
    </p>
    <!-- <a href=""><strong>Explore the docs »</strong></a> -->
